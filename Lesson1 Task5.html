@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transportation on vacation</title>
+</head>
+<body>
+    <script>
+
+var sum;
+var a =40;
+var b =50;
+var c = 20;
+
+var q;
+
+function vacation(){
+
+q = +prompt ("How many days", "");
+
+if (q<=2 && q!=0) {
+    sum = q*a;
+    document.write("<p>" + sum + "<hr />");
+}       
+else if ( 3<=q && q<7) {
+    sum = (q*a)-c;
+    document.write("<p>" + sum + "<hr />");
+}
+else {
+    sum = (q*a)-b;
+    document.write("<p>" + sum + "<hr />");
+}
+}
+
+do {
+vacation();
+var repiter = confirm ("Пройти операцию еще раз ? ")
+}
+while ( repiter);
+    
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+<!-- 
+function rentalCarCost(d) {
+    {  
+      let day = d >= 3 && d < 7 ? 20 : 0, // day discount
+          week = d >= 7 ? 50 : 0; // week discount
+    
+      return (d * 40) - day - week;
+    }
+    } -->

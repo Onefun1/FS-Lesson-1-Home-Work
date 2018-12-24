@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 1 - (Повторять цикл, пока ввод неверен)</title>
+</head>
+<body>
+    <script>
+    
+
+var a =prompt("Enter a number \'a'\ over 100",  "");
+
+while (a<=100 && a!=null) {
+
+    alert("Wrong value! Try again.")
+    a =prompt("Введите число \'a'\ более 100",  "");
+
+        
+}
+
+if (a==null) {
+  
+  document.write( "You canceled! Good Bye!" + "<hr />");
+
+
+} 
+
+if (a>100) {
+    
+    alert ("You entered \'a'\ = "+ a);
+     document.write( "a = "+ a +  "<hr />");
+
+} 
+  
+    
+    </script>
+    
+</body>
+</html>

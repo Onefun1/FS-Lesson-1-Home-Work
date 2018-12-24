@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Mathematical Operations</title>
+</head>
+<body>
+    <script>
+
+        var a;
+        var b;
+        var c;
+        var result;
+
+    function Basic() {
+
+var a =+prompt("Enter first number", "");
+var b =+prompt("Enter second number", "");
+var c =prompt("Enter operation like: | + | - | * | / | ", "")
+
+
+switch (c) {
+
+    case"+":
+        result = a + b;
+
+            document.write("<p>" + result + "<hr /");
+            break;
+
+    case"-":
+        result = a - b;
+
+            document.write("<p>" + result + "<hr /");
+            break;
+
+    case"*":
+        result = a * b;
+
+            document.write("<p>" + result + "<hr /");
+            break;
+
+    case"/":
+
+    if (b!=0) {
+        result = a / b;
+            document.write("<p>" + result + "<hr /");
+    }
+
+    else 
+
+            document.write("Попытка деления на 0");
+            break;
+
+}
+}  
+
+do {
+Basic();
+var repiter = confirm ("Пройти операции еще раз ? ")
+}
+while ( repiter);
+
+
+
+    </script>
+    
+</body>
+</html>
